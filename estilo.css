@@ -1,0 +1,31 @@
+
+        body {
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .triangle {
+            stroke-dasharray: 17;
+            animation: dash 2.5s cubic-bezier(0.35, 0.04, 0.63, 0.95) infinite;
+        }
+
+        @keyframes dash {
+            to {
+                stroke-dashoffset: 136;
+            }
+        }
+     
+        .finance {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 5.5px;
+            animation: blink .9s ease-in-out infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
